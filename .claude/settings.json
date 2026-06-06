@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"C:\\\\Users\\\\王皓\\\\Documents\\\\GitHub-\\\\checkpoints\\\\\\\\\")",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
