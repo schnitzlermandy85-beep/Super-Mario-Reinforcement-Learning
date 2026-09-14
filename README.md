@@ -4,9 +4,9 @@
 
 [训练入口](main.py) · [DQN 实现](agent.py) · [网络结构](neural.py) · [训练回放](replay.py)
 
-本仓库展示环境预处理、价值网络、经验回放与训练日志的组织方式。以下保留课程框架说明；实现进度以当前代码为准，训练效果需结合对应 checkpoint 与日志判断。
+本仓库展示环境预处理、价值网络、经验回放与训练日志的组织方式。当前代码已包含 Q 值估计、Double DQN 目标计算与梯度更新；训练效果需结合对应 checkpoint 与日志判断。
 
-该框架目标是在 `gym-super-mario-bros` 上补全并跑通 DQN。
+该项目在 `gym-super-mario-bros` 上实现基于像素输入的 DQN 训练流程。
 
 这是马里奥像素场景更常见、更合理的强化学习做法。
 
@@ -20,7 +20,7 @@ conda activate mario-dqn
 ## 2. File Structure
 
 - `main.py`：训练入口
-- `agent.py`：需要补全的 DQN 核心逻辑
+- `agent.py`：DQN 核心逻辑与 Double DQN 目标计算
 - `neural.py`：CNN 网络定义
 - `wrappers.py`：环境预处理
 - `compat.py`：老版本依赖的运行时兼容补丁
@@ -36,7 +36,7 @@ conda activate mario-dqn
 - `wrappers.py`
 - `main.py`
 
-其中 `agent.py` 中已经标出 `TODO`，需要自行补全。
+`agent.py` 中的 `td_estimate`、`td_target` 和 `update_Q_online` 已有实现，可结合课程说明理解 Q 值估计、目标计算与参数更新。
 
 ## 4. Run
 
