@@ -1,4 +1,10 @@
-# Mario DQN Starter Code
+# Mario DQN Lab
+
+**像素输入强化学习课程实验 · Python · PyTorch**
+
+[训练入口](main.py) · [DQN 实现](agent.py) · [网络结构](neural.py) · [训练回放](replay.py)
+
+本仓库展示环境预处理、价值网络、经验回放与训练日志的组织方式。以下保留课程框架说明；实现进度以当前代码为准，训练效果需结合对应 checkpoint 与日志判断。
 
 该框架目标是在 `gym-super-mario-bros` 上补全并跑通 DQN。
 
